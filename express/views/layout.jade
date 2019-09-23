@@ -1,0 +1,44 @@
+html
+  head
+    h1
+      b Welcome to Stayzone
+    style(type='text/css').
+      body  {
+      font-family: cursive;
+      margin-left: 10%;
+      margin-right: 10%;
+      border: 15px solid gray;
+      }
+      h1    {	color: white;
+      margin-bottom: 5%;
+      margin-left: 25%;
+      margin-right: 25%;
+      text-align: center;
+      }
+  body
+    style(type='text/css').
+      body
+      {
+      background:url("images/usimg.jpg");
+      background-repeat: no-repeat;
+      background-size: 30% 30%;
+      background-position: 50% 30%;
+      color: white;
+      padding-top: 140px;
+      padding-bottom: 20px;
+      text-align: center;
+      }
+      #resultContainer {
+      color: #000;
+      }
+    form
+      | Your Stay
+      input#searchQuery(type='text', placeholder='Search here..', name='hola')
+      input(type='button', onclick='callAjax()', value='Search')
+      button(onclick='clear()') Clear
+    #resultContainer
+  script(src='https://code.jquery.com/jquery-3.2.1.min.js', ,='', integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=', crossorigin='anonymous')
+  script(src='javascripts/ajax.js')
+  script(src='/DataTables-1.10.4/media/js/jquery.dataTables.js')
+  script(src='/libs/jquery-2.1.1.min.js')
+  script(src='ajax.js')
